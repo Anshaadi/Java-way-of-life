@@ -1,0 +1,42 @@
+public class StringDemo {
+
+   public static void main(String args[]) {
+      String string1 = "saw I was ";
+      System.out.println("Dot " + string1.concat("anshul ") + "Tod");
+      
+      
+      char[] c = {'a','n','s','h','u','l'};
+      String name = new String(c);
+      
+      //length()
+      int len = name.length();
+      System.out.println("The name is "+name+" and name length is "+len);
+      
+      String newname = name.concat(" Shrivastava");
+      System.out.println("The full name is "+newname);
+      
+      //format()
+      String address = new String();
+      address=String.format("City is %s with pincode %d having swachh bharat points as %f","Bhopal",462003,9.5);
+      System.out.printf(address+"\n");
+      System.out.println("The full name is "+newname);
+      
+      //charAt()
+      System.out.println("The char at index o,7,11 are : "+newname.charAt(0)+","+newname.charAt(7)+","+newname.charAt(11));
+      
+      //compareTo()
+      System.out.println("Lexicographical comparision of " + name + " and "+ newname +" gives : "+ name.compareTo(newname));
+      
+      //compareToIgnoreCase()
+       System.out.println("Lexicographical comparision with case differences of " + name + " and "+ newname +" gives : "+ name.compareToIgnoreCase(newname));
+       
+       //contentEquals()
+       StringBuffer str = new StringBuffer("anshul");
+       System.out.println("is "+name+" equals to "+str+" ? "+ name.contentEquals(str));
+      
+      
+     
+      
+      
+   }
+}
